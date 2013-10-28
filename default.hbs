@@ -46,7 +46,7 @@
         </style>
         <link rel="stylesheet" href="css/main.css">
 
-        <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+        <script src="/assets/js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
     </head>
     <body class="{{body_class}}">
             <!--[if lt IE 7]>
@@ -59,7 +59,8 @@
         </div>
         <div class="navbar-body">
             <ul class="nav navbar-nav navbar-right">
-                <li><form class="navbar-form"><button type="button" class="btn btn-default" id="playPause"><i class="glyphicon glyphicon-play"></i></button></form></li>
+                <li id="loading">Loading audio stream...</li>
+                <li><form class="navbar-form"><button type="button" onclick="togglePlayback();" class="btn btn-default" id="playPause"><i class="glyphicon glyphicon-pause"></i></button></form></li>
             </ul>
         </div>
         </div>
