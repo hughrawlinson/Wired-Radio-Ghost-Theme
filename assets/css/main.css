@@ -31,3 +31,7 @@ h1,h2,h3,h4,h5,.navbar-brand{
 	font-size:25px;
 	margin-right: 8px;
 }
+
+.fa-black{
+	color:black;
+}
