@@ -5,5 +5,5 @@ var togglePlayback = function(){
 }
 
 $(audioelement).bind('canplay',function(){
-	$('loading').hide();
+	$('#loading').hide();
 })

@@ -1,13 +1,6 @@
-
-
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-
-
-
-
-
 
 #banner{
 	background:url("../img/gsmithsb.jpg");
@@ -15,12 +8,21 @@
 	background-position:center; 
 }
 
-
-
-
-
-
-
-
-
-
+body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+p{
+    font-family: 'Open Sans';
+    font-weight: 300;
+}
+.jumbotron h1,h1,h2,h3,h4,h5,.navbar-brand{
+    font-family: 'Futura', 'Montserrat';
+}
+.goldsmiths{
+    font-family: 'Montserrat';
+    color: #caab72;
+}
+h1,h2,h3,h4,h5,.navbar-brand{
+    text-transform: uppercase;
+}
