@@ -26,3 +26,8 @@ p{
 h1,h2,h3,h4,h5,.navbar-brand{
     text-transform: uppercase;
 }
+
+.share{
+	font-size:25px;
+	margin-right: 8px;
+}
