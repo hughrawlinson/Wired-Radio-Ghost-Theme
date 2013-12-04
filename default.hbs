@@ -49,23 +49,6 @@
     <!-- Main jumbotron for a primary marketing message or call to action -->
     <div class="jumbotron" id="banner">
         <div class="container">
-            <script src="/assets/js/vendor/soundmanager2-jsmin.js"></script>
-            <script>
-            soundManager.setup({
-                url: '/assets/js/vendor/swf',
-                onready: function() {
-                    var mySound = soundManager.createSound({
-                        id: 'aSound',
-                        url: 'http://z.smornet.org:8000/wired'
-                    });
-                    mySound.play();
-                },
-                ontimeout: function() {
-                // Hrmm, SM2 could not start. Missing SWF? Flash blocked? Show an error, etc.?
-                }
-            });
-            </script>
-
             <h1 class="text-center">Wired Radio<br><span class="goldsmiths">Goldsmiths</span></h1>
         </div>
     </div>
@@ -81,21 +64,20 @@
             <p class="text-muted">Design &copy; Hugh Rawlinson 2013 | Powered by <a href="https://ghost.org">Ghost</a> and <a href="http://z.smornet.org">Smornet.org</a></p>
         </footer>
 
-    </div> <!-- /container -->  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="/assets/js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
+    </div> <!-- /container --> 
+    <script src="/assets/js/vendor/soundmanager2-jsmin.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="/assets/js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
+    <script src="/assets/js/vendor/bootstrap.min.js"></script>
+    <script src="/assets/js/main.js"></script>
+    <script>
+        !function(g,s,q,r,d){r=g[r]=g[r]||function(){(r.q=r.q||[]).push(
+        arguments)};d=s.createElement(q);q=s.getElementsByTagName(q)[0];
+        d.src='//d1l6p2sc9645hc.cloudfront.net/tracker.js';q.parentNode.
+        insertBefore(d,q)}(window,document,'script','_gs');
 
-        <script src="/assets/js/vendor/bootstrap.min.js"></script>
-
-        <script src="/assets/js/main.js"></script>
-
-        <script>
-          !function(g,s,q,r,d){r=g[r]=g[r]||function(){(r.q=r.q||[]).push(
-          arguments)};d=s.createElement(q);q=s.getElementsByTagName(q)[0];
-          d.src='//d1l6p2sc9645hc.cloudfront.net/tracker.js';q.parentNode.
-          insertBefore(d,q)}(window,document,'script','_gs');
-          
-          _gs('GSN-302656-I');
-        </script>
+        _gs('GSN-302656-I');
+    </script>
 
         {{! Ghost outputs important scripts and data with this tag }}
         {{ghost_foot}}

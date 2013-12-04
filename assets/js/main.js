@@ -1,9 +1,21 @@
-var audioelement = $('#radiostream').get(0);
+var stream = null;
+
 var togglePlayback = function(){
-	!audioelement.paused?audioelement.pause():audioelement.play();
+	!stream.paused?stream.pause():stream.play();
 	$($('#playPause').find('i')).attr('class',$('#radiostream').get(0).paused?'fa fa-play':'fa fa-pause');
 }
 
-$(audioelement).bind('canplay',function(){
-	$('#loading').hide();
-})
+soundManager.setup({
+    url: '/assets/js/vendor/swf',
+    onready: function() {
+        stream = soundManager.createSound({
+            id: 'stream',
+            url: 'http://z.smornet.org:8000/wired'
+        });
+        stream.play();
+        $('#loading').hide();
+    },
+    ontimeout: function() {
+    // Hrmm, SM2 could not start. Missing SWF? Flash blocked? Show an error, etc.?
+    }
+});
