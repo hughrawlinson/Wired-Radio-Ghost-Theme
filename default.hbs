@@ -49,12 +49,22 @@
     <!-- Main jumbotron for a primary marketing message or call to action -->
     <div class="jumbotron" id="banner">
         <div class="container">
-            <audio id="radiostream" autoplay="autoplay" preload="auto">
-                <source src="http://owl.gold.ac.uk:8000/wired">
-                {{!-- <source src="http://owl.gold.ac.uk:8000/wired">
-                <source src="http://z.smornet.org:8000/hugh"> --}}
-                Please use Chrome. Our technicians are working on making audio cross-browser compatible.
-            </audio>
+            <script src="js/vendor/soundmanager2-jsmin.js"></script>
+            <script>
+            soundManager.setup({
+                url: 'js/vendor/swf',
+                onready: function() {
+                    var mySound = soundManager.createSound({
+                        id: 'aSound',
+                        url: 'http://z.smornet.org:8000/wired'
+                    });
+                    mySound.play();
+                },
+                ontimeout: function() {
+                // Hrmm, SM2 could not start. Missing SWF? Flash blocked? Show an error, etc.?
+                }
+            });
+            </script>
 
             <h1 class="text-center">Wired Radio<br><span class="goldsmiths">Goldsmiths</span></h1>
         </div>
