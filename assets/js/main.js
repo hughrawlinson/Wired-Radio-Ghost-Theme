@@ -1,8 +1,8 @@
 var stream = null;
 
 var togglePlayback = function(){
-	!stream.paused?stream.pause():stream.play();
-	$($('#playPause').find('i')).attr('class',$('#radiostream').get(0).paused?'fa fa-play':'fa fa-pause');
+	stream.paused?stream.play():stream.pause();
+	$($('#playPause').find('i')).attr('class',stream.paused?'fa fa-play':'fa fa-pause');
 }
 
 soundManager.setup({
