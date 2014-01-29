@@ -10,7 +10,7 @@ soundManager.setup({
     onready: function() {
         stream = soundManager.createSound({
             id: 'stream',
-            url: 'http://z.smornet.org:8000/wired'
+            url: 'http://owl.gold.ac.uk:8000/wired'
         });
         stream.play();
         $('#loading').hide();
