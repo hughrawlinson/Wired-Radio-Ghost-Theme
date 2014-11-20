@@ -5,6 +5,7 @@
 
     <name> -- <role> -- <twitter>
     James -- wired tech guy 2014 -- @joldfield_
+    Hugh Rawlinson -- Wired 'Tech Guy' 2012 - 24 - hughrawlinson
 
 # THANKS
 
