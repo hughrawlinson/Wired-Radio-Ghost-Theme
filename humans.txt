@@ -4,6 +4,7 @@
 # TEAM
 
     <name> -- <role> -- <twitter>
+    James -- wired tech guy 2014 -- @joldfield_
 
 # THANKS
 
